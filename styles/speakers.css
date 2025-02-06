@@ -4,6 +4,43 @@
     fill: var(--color-primary);
 }
 
+.speakers__wrapper {
+    max-width: 460px;
+}
+
+.speakers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
 .speakers .main__title {
     font-size: 98px;
+}
+
+.speaker__photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 36px;
+}
+
+.speaker__name {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.speaker__company {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.speaker__info {
+    font-size: 20px;
+}
+
+.speaker__company,
+.speaker__info {
+    color: var(--color-text-secondary);
 }

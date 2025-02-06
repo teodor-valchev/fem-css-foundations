@@ -1,6 +1,7 @@
 :root {
     --color-primary: #FF7B54;
     --color-text-primary: #ffff;
+    --color-text-secondary: #000000;
     --font-family: 'Inter', sans-serif;
     --color-button-border: var(--color-text-primary);
 
@@ -37,7 +38,7 @@ a {
     text-decoration: none;
 }
 
-p {
+p, h2 {
     margin: 0;
 }
 
@@ -82,7 +83,7 @@ p {
 }
 
 .button:hover,
-button:focus{
+button:focus {
     outline: 2px solid var(--color-text-primary);
 }
 
@@ -96,11 +97,12 @@ button:focus{
     color: var(--color-button-secondary-text);
 }
 
-.button-container{
+.button-container {
     display: flex;
     gap: 1em;
     margin-top: 3rem;
 }
+
 .button-icon {
     vertical-align: middle;
 }
