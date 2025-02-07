@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+.menu, .close {
+    display: none;
+}
+
 p, h2 {
     margin: 0;
 }
@@ -108,14 +112,59 @@ button:focus {
 }
 
 @media (max-width: 1220px) {
-.button {
-    font-size: 24px;
-    padding: 0 32px;
-    height: 70px;
-}
+    .button {
+        font-size: 24px;
+        padding: 0 32px;
+        height: 70px;
+    }
 
     .button img {
         width: 20px;
+    }
+}
+
+@media (max-width: 840px) {
+    .menu {
+        display: block;
+    }
+
+    .menu--hide {
+        display: none;
+    }
+
+    .close--show {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--color-primary);
+        top: 60px;
+        left: -100%;
+        padding-top: 60px;
+    }
+
+    .nav--visible {
+        left: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80%;
+    }
+
+    .nav__list-item {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .header {
+        grid-template-columns: 33px 1fr 34px;
+        align-content: center;
+        justify-content: center;
     }
 }
 
@@ -128,7 +177,7 @@ button:focus {
 @media (max-width: 700px) {
     .button {
         font-size: 16px;
-        margin:24px;
+        margin: 24px;
     }
 
     .button-container {
